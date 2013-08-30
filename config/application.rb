@@ -21,5 +21,8 @@ module CrisazevedoWebsite
     # config.i18n.default_locale = :de
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.time_zone = 'Brasilia'
+    config.i18n.default_locale = :pt_BR
+    config.encoding = "utf-8"
   end
 end
