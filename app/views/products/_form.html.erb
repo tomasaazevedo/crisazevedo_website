@@ -1,0 +1,63 @@
+<%= form_for(@product, multipart: true) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= select("type", "type", Product::TYPELIST) %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_area :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.text_field :material %>
+  </div>
+  <div class="field">
+    <%= f.label :product_code %><br>
+    <%= f.text_field :product_code %>
+  </div>
+  <div class="field">
+    <%= f.label :is_new_release %><br>
+    <%= f.check_box :is_new_release %>
+  </div>
+  <div class="field">
+    <%= f.label :collection_id %><br>
+    <%= f.collection_select :collection_id, Collection.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :sub_collection_id %><br>
+    <%= f.collection_select :sub_collection_id, SubCollection.all, :id, :name, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.fields_for :product_images do |p| %>
+      <%= p.label :product_image %><br>
+      <%= p.file_field :product_image, :multiple => true, name: 'product[product_images_attributes][][product_image]' %>
+    <% end %>'
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

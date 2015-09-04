@@ -1,10 +1,33 @@
-CrisazevedoWebsite::Application.routes.draw do
-  resources :sessions, only: [:new, :create, :destroy]
-  resources :users
-  root 'index#home'
-  match '/signup',  to: 'users#new',            via: 'get'
-  match '/signin',  to: 'sessions#new',         via: 'get'
-  match '/signout', to: 'sessions#destroy',     via: 'delete'
+Rails.application.routes.draw do
+  resources :highlights
+  resources :sub_collection_images
+  resources :collection_images
+  resources :product_images
+  resources :products
+  resources :sub_collections
+  resources :collections
+  root 'home#index'
+
+  get 'signup'  => 'users#signup'
+  post 'signup' => 'users#signup_post' 
+  get '/users' => 'users#index'
+  get '/users/new' => 'users#new', as: 'new_user'
+  post '/users' => 'users#create'
+  get '/users/:id' => 'users#show', as: 'user'
+  get '/users/:id/edit' => 'users#edit', as: 'edit_user'
+  put '/users/:id' => 'users#update'
+  delete '/users/:id' => 'users#destroy'
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
+  get '/products/destroy_image/:id' => 'products#destroy_image'
+  get '/collections/destroy_image/:id' => 'collections#destroy_image'
+  get '/sub_collections/destroy_image/:id' => 'sub_collections#destroy_image'
+
+  get '/show_collections/:id' => 'collections#show_pretty', as: 'show_collections'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -45,7 +68,7 @@ CrisazevedoWebsite::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

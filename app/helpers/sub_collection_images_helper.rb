@@ -1,0 +1,2 @@
+module SubCollectionImagesHelper
+end

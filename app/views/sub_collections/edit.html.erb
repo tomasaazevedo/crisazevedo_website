@@ -1,0 +1,20 @@
+<h1>Editing Sub Collection</h1>
+
+<%= render 'form' %>
+
+<% if not @sub_collection_images.nil?%>
+  <p>
+    <strong>Remover imagens:</strong>
+    <% @sub_collection_images.each do |sci| %>
+      <div class='image_container'>
+        <%= image_tag sci.sub_collection_image.url(:large) %>
+        <%= link_to 'Delete', 
+          { :controller => 'sub_collections', :action => 'destroy_image', :id => sci.id },
+          { :data => {:confirm => 'Are you sure?'}, :method => :get} %> 
+      </div>
+    <% end %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @sub_collection %> |
+<%= link_to 'Back', sub_collections_path %>

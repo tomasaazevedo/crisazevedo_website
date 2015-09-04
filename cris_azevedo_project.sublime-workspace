@@ -1,0 +1,326 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"determinaFecho",
+				"determinaFechoReflexivoTransitivo"
+			],
+			[
+				"deter",
+				"determinaFechoTransitivo"
+			],
+			[
+				"determinaF",
+				"determinaFechoReflexivo"
+			],
+			[
+				"lis",
+				"listaNova"
+			],
+			[
+				"lista",
+				"listaFechoTransitivo"
+			],
+			[
+				"fech",
+				"fecho_transitivo"
+			],
+			[
+				"adici",
+				"adicionaParEmLista"
+			],
+			[
+				"list",
+				"listaDePares2"
+			],
+			[
+				"dete",
+				"determinaFechoTransitivo"
+			],
+			[
+				"fe",
+				"fecho_reflexivo"
+			],
+			[
+				"adi",
+				"adicionaParEmLista"
+			],
+			[
+				"par",
+				"parSimetrico"
+			],
+			[
+				"perco",
+				"procuraParSimetrico"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/tazevedo/Projects/cris_azevedo"
+	],
+	"file_history":
+	[
+		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/EdTest.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/Edwards.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/BZ.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/EdTest0.c",
+		"/C/Users/tazevedo/Documents/BodyCom/bodycom_tcc/.gitignore",
+		"/C/Users/tazevedo/Documents/BodyCom/PKP.2015.05.27/AES128MMO.c",
+		"/C/Users/tazevedo/Documents/BodyCom/PKP.2015.05.27/CurupiraMMO.h",
+		"/C/Users/tazevedo/Documents/BodyCom/PKP.2015.05.27/SpeckMMO.h",
+		"/C/Users/tazevedo/Documents/BodyCom/PKP.2015.05.27/CurupiraMMO.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_NoDebug/Button/BN_ButtonDetection.c",
+		"/C/Program Files (x86)/Microchip/xc8/v1.21/include/pic16lf1829.h",
+		"/C/Program Files (x86)/Microchip/xc8/v1.21/include/htc.h",
+		"/C/Program Files (x86)/Microchip/xc8/v1.21/include/xc.h",
+		"/E/PRIVATE/AVCHD/BDMV/CLIPINF/00100.CPI",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BC_Board_Mod.X/build/default/production/main.pre",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Requisitos de Sistemas/ex22/confiabilidade_com_reparo.txt",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Requisitos de Sistemas/ex22/disponibilidade.txt",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Requisitos de Sistemas/ex22/confiabilidade_sem_reparo.txt",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Requisitos de Sistemas/ex22/output2.txt",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Lógica Computacional/EPLogica/ep2.rkt",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/EUSART/PC_Handler.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/EUSART/PC_Handler.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/EUSART/PC_Rx.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/Manchester/RX_Manchester.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/EUSART/PC_Rx.c",
+		"/C/Users/tazevedo/Documents/BodyCom/tiny_encryption/aes_larc.c",
+		"/C/Users/tazevedo/Documents/BodyCom/tiny_encryption/Curupira-1/Full/Curupira1.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/EUSART/PC_Tx.h",
+		"/C/Users/tazevedo/gitt_hotel/db/migrate/20150304202635_create_dormitories.rb",
+		"/C/Users/tazevedo/gitt_hotel/app/controllers/dorms_grids_controller.rb",
+		"/C/Users/tazevedo/gitt_hotel/app/models/dormitory.rb",
+		"/C/Users/tazevedo/gitt_hotel/app/views/dorms_grids/index.html.erb",
+		"/C/Users/tazevedo/gitt_hotel/app/views/dorms_grids/_form.html.erb",
+		"/C/Ruby21-x64/DevKit/config.yml",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/RX_Manchester.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/PC_Handler.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/PC_Rx.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/PC_Tx.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/TX_Manchester.h",
+		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/RX_Manchester.h",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Lógica Computacional/EPLogica/ep1.rkt",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BodyCom_Application/BC_Application.c",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BC_Board_Mod.X/main.c",
+		"/C/Users/tazevedo/Documents/Poli/2015-1/Lab. Soft. II/GITTHotel/README.md",
+		"/C/Program Files (x86)/Microchip/BodyCom Technology/Firmware/V 1.2 Release/BC_Mobile_Dev.X/config.h",
+		"/C/Program Files (x86)/Microchip/BodyCom Technology/Firmware/V 1.2 Release/BC_Mobile_Dev.X/main.c",
+		"/C/Users/tazevedo/Documents/BodyCom/report.txt",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Original/BC_Board_Original.X/dist/default/production/BC_Board_Original.X.production.obj",
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Original/BC_Board_Original.X/dist/default/production/BC_Board_Original.X.production.map"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>,*.c, *.h",
+			"<open folders>",
+			"C:\\Users\\tazevedo\\Documents\\BodyCom\\BC_Board_Original",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"EdD",
+			"mark",
+			"EdDsp",
+			"printf",
+			"UG_IO\n\n// #include <stdio.h>\n// #include<assert.h>\n\n// void BZ_Display(const char *name, const BZ_sdigit_t *u, short ud) {\n//     short i, j;\n//     //assert(ud >= 0);\n//     printf(\"%s[%d]:\", name, ud);\n//     if (ud > 0) {\n//         for (i = ud - 1, j = 0; i >= 0; i--, j++) {\n//             //printf(\"%s%02X%s\", (j % MAX_BZ_BYTES) ? \"\" : \"\\t\", u[i] & DIGIT_MASK, ((j+1) % MAX_BZ_BYTES) ? \"\" : \"\\n\");\n// #if (DIGIT_LGBITS==3)\n//             printf(\"%s%02X%s\", (j % (2*MAX_BZ_BYTES)) ? \"\" : \"\\t\", u[i] & DIGIT_MASK, ((j+1) % (2*MAX_BZ_BYTES)) ? \"\" : \"\\n\");\n// #elif (DIGIT_LGBITS==4)\n//             printf(\"%s%02X%s\", (j % (2*MAX_BZ_BYTES)) ? \"\" : \"\\t\", u[i] & DIGIT_MASK, ((j+1) % (2*MAX_BZ_BYTES)) ? \"\" : \"\\n\");\n// #elif (DIGIT_LGBITS==5)\n//             printf(\"%s%02I64X%s\", (j % (2*MAX_BZ_BYTES)) ? \"\" : \"\\t\", u[i] & DIGIT_MASK, ((j+1) % (2*MAX_BZ_BYTES)) ? \"\" : \"\\n\");\n// #elif (DIGIT_LGBITS==6)\n//             printf(\"%s%02I128X%s\", (j % (2*MAX_BZ_BYTES)) ? \"\" : \"\\t\", u[i] & DIGIT_MASK, ((j+1) % (2*MAX_BZ_BYTES)) ? \"\" : \"\\n\");\n// #else\n// #error \"UNSUPPORTED DIGIT SIZE\"\n// #endif\n//         }\n//     } else {\n//         printf(\"\\t%02X\", 0);\n//     }\n//     printf(\"\\n\");\n// }\n\n// #endif /* DEBUG_I",
+			"printf",
+			"DEBUG_IO",
+			"#ifdef DEBUG_IO",
+			"printf",
+			"REQUIRE_SCT",
+			"ENABLE_DEBUG_CIPHER",
+			"cipherCryptB",
+			"SWDTEN",
+			"DBUF_Printf",
+			"ANSB",
+			"ANSA",
+			"LATC",
+			"LED",
+			"LATB",
+			"LATA",
+			"_XTAL_FREQ",
+			"__delay",
+			"TRISA0",
+			"TRISAbits",
+			"Display_Splash",
+			"AFE_WriteCommand",
+			"ReadyToScan",
+			"BCOM_CMD_RXPACKET",
+			"BC_DisplayRxPacket",
+			"BC_ConfigureAfe",
+			"AfeDebugMenu_t",
+			"BC_ConfigureDebugSettingsCheck",
+			"BC_DebugSettingsConfigure",
+			"BodyComState",
+			"EVAL_PROX",
+			"PROX",
+			"MDLL_receiveDataPacket",
+			"MDLL_DeviceAddress[",
+			"MDLL_DeviceAddress",
+			"packet",
+			"count",
+			"RX_MAX_PACKET_SIZE",
+			"PcRxBuffer",
+			"sendpacket",
+			"packet_size",
+			"3T7",
+			"dpair_list",
+			"dpair",
+			"first",
+			"rest",
+			"aes",
+			"security",
+			"cryptography"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cris_azevedo_project.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

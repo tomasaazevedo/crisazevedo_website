@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sub collection image:</strong>
+  <%= image_tag @sub_collection_image.sub_collection_image.url(:large) %>
+</p>
+
+<p>
+  <strong>Sub collection:</strong>
+  <%= @sub_collection_image.sub_collection.name %>
+</p>
+
+<%= link_to 'Edit', edit_sub_collection_image_path(@sub_collection_image) %> |
+<%= link_to 'Back', sub_collection_images_path %>

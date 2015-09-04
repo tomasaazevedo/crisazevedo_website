@@ -1,0 +1,11 @@
+<div class="highlights-box"> 
+  <div class="highlights-container">
+    <% if not @active_highlights.nil? %>
+      <% @active_highlights.each do |ah| %>
+        <div>
+          <%= image_tag ah.image.url(:large)  %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

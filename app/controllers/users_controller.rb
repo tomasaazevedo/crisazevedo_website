@@ -1,29 +1,83 @@
-# encoding: utf-8
 class UsersController < ApplicationController
+  before_action :require_admin
 
-	def show
-    	@user = User.find(params[:id])
-  	end
+  # GET /users
+  # GET /users.json
+  def index
+    @users = User.all
+  end
 
-  	def new
-  		@user = User.new
-  	end
+  def new
+    @newuser = User.new
+  end
 
-  	def create
-	    @user = User.new(user_params)
-	    if @user.save
-          sign_in @user
-	      	flash[:success] = "Cadastro de usuário realizado com sucesso!"
-      		redirect_to @user
-	    else
-	      	render 'new'
-	    end
-	end
+  # POST /users
+  # POST /users.json
+  def create
+    @user = User.new(user_params)
 
-  	private
-
-    def user_params
-      	params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.json { render :show, status: :created, location: @user }
+      else
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
+  end
+
+  # GET /users/1/edit
+  def edit
+    @user = User.find_by_id(params[:id])
+  end
+
+  # GET /users/1
+  # GET /users/1.json
+  def show
+    @user = User.find_by_id(params[:id])
+  end
+
+  # PATCH/PUT /users/1
+  # PATCH/PUT /users/1.json
+  def update
+    respond_to do |format|
+      if @user.update(user_params)
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
+      else
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /users/1
+  # DELETE /users/1.json
+  def destroy
+    @user.destroy
+    respond_to do |format|
+      format.html { redirect_to collection_images_url, notice: 'User was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  def signup
+    @user = User.new
+  end
+
+  def signup_post 
+    @user = User.new(user_params) 
+    if @user.save 
+      session[:user_id] = @user.id 
+      redirect_to '/' 
+    else 
+      redirect_to '/signup' 
+    end 
+  end
+
+  private
+    def user_params
+      params.require(:user).permit(:first_name, :last_name, :username, :email, :password, :role)
+  end
 end

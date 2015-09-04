@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sub Collection Images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub collection image</th>
+      <th>Sub collection</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sub_collection_images.each do |sub_collection_image| %>
+      <tr>
+        <td><%= image_tag sub_collection_image.sub_collection_image.url(:small) %></td>
+        <td><%= sub_collection_image.sub_collection.name %></td>
+        <td><%= link_to 'Show', sub_collection_image %></td>
+        <td><%= link_to 'Edit', edit_sub_collection_image_path(sub_collection_image) %></td>
+        <td><%= link_to 'Destroy', sub_collection_image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sub collection image', new_sub_collection_image_path %>

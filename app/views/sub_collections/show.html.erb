@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sub_collection.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sub_collection.description %>
+</p>
+
+<p>
+  <strong>Collection:</strong>
+  <%= @sub_collection.collection.name %>
+</p>
+
+<% if not @sub_collection_images.nil?%>
+  <p>
+    <strong>Imagens:</strong>
+    <% @sub_collection_images.each do |sci| %>
+      <%= image_tag sci.sub_collection_image.url(:large) %>
+    <% end %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_sub_collection_path(@sub_collection) %> |
+<%= link_to 'Back', sub_collections_path %>

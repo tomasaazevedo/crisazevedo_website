@@ -1,0 +1,35 @@
+<%= form_for(@sub_collection, multipart: true) do |f| %>
+  <% if @sub_collection.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sub_collection.errors.count, "error") %> prohibited this sub_collection from being saved:</h2>
+
+      <ul>
+      <% @sub_collection.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :collection %><br>
+    <%= f.collection_select :collection_id, Collection.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.fields_for :sub_collection_images do |p| %>
+        <%= p.label :sub_collection_image %><br>
+        <%= p.file_field :sub_collection_image, :multiple => true, name: 'sub_collection[sub_collection_images_attributes][][sub_collection_image]' %>
+    <% end %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

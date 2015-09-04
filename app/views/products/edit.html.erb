@@ -1,0 +1,20 @@
+<h1>Editing Product</h1>
+
+<%= render 'form' %>
+
+<% if not @product_images.nil?%>
+  <p>
+    <strong>Remover imagens:</strong>
+    <% @product_images.each do |pi| %>
+      <div class='image_container'>
+        <%= image_tag pi.product_image.url(:large) %>
+        <%= link_to 'Delete', 
+          { :controller => 'products', :action => 'destroy_image', :id => pi.id },
+          { :data => {:confirm => 'Are you sure?'}, :method => :get} %> 
+      </div>
+    <% end %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>

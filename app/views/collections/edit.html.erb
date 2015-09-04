@@ -1,0 +1,20 @@
+<h1>Editing Collection</h1>
+
+<%= render 'form' %>
+
+<% if not @collection_images.nil?%>
+  <p>
+    <strong>Remover imagens:</strong>
+    <% @collection_images.each do |ci| %>
+      <div class='image_container'>
+        <%= image_tag ci.collection_image.url(:large) %>
+        <%= link_to 'Delete', 
+          { :controller => 'collections', :action => 'destroy_image', :id => ci.id },
+          { :data => {:confirm => 'Are you sure?'}, :method => :get} %> 
+      </div>
+    <% end %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @collection %> |
+<%= link_to 'Back', collections_path %>
