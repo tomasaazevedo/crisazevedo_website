@@ -36,7 +36,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,11 +69,15 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin menu <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "Usuários", 'users' %></li> 
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><%= link_to "Coleções", collections_path %></li>
+                  <li><%= link_to "Sub-Coleções", sub_collections_path %></li>
+                  <li><%= link_to "Produtos", products_path %></li>
+                  <li><%= link_to "Destaques", highlights_path %></li>
+                  <li><%= link_to "Usuários", users_path %></li> 
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><%= link_to "Imagens de produto", 'product_images' %></li>
+                  <li><%= link_to "Imagens de sub-coleções", 'sub_collection_images' %></li>
+                  <li><%= link_to "Imagens de coleções", 'collection_images' %></li>
                 </ul>
               </li>
             <% end %>

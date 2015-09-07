@@ -23,6 +23,7 @@ class SubCollectionsController < ApplicationController
   # GET /sub_collections/1/edit
   def edit
     @sub_collection_images = @sub_collection.sub_collection_images.all
+    @sub_collection.sub_collection_images.build
   end
 
   # POST /sub_collections
@@ -40,6 +41,7 @@ class SubCollectionsController < ApplicationController
         format.html { redirect_to @sub_collection, notice: 'Sub collection was successfully created.' }
         format.json { render :show, status: :created, location: @sub_collection }
       else
+        @sub_collection.sub_collection_images.build
         format.html { render :new }
         format.json { render json: @sub_collection.errors, status: :unprocessable_entity }
       end
@@ -59,6 +61,7 @@ class SubCollectionsController < ApplicationController
         format.html { redirect_to @sub_collection, notice: 'Sub collection was successfully updated.' }
         format.json { render :show, status: :ok, location: @sub_collection }
       else
+        @sub_collection.sub_collection_images.build
         format.html { render :edit }
         format.json { render json: @sub_collection.errors, status: :unprocessable_entity }
       end

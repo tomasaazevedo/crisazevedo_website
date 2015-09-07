@@ -54,7 +54,7 @@
   <p>
     <strong>Imagens:</strong>
     <% @product_images.each do |pi| %>
-      <%= image_tag pi.product_image.url(:large) %>
+      <%= image_tag pi.product_image.url(:med) %>
     <% end %>
   </p>
 <% end %>

@@ -1,7 +1,7 @@
 class CollectionsController < ApplicationController
   before_action :require_admin
-  before_action :set_collection, only: [:show, :edit, :update, :destroy, :show_pretty]
-  skip_before_action :require_admin, only: [:show_pretty]
+  before_action :set_collection, only: [:show, :edit, :update, :destroy, :show_collection, :show_collections]
+  skip_before_action :require_admin, only: [:show_collection, :show_collections]
 
   # GET /collections
   # GET /collections.json
@@ -24,6 +24,7 @@ class CollectionsController < ApplicationController
   # GET /collections/1/edit
   def edit
     @collection_images = @collection.collection_images.all
+    @collection.collection_images.build
   end
 
   # POST /collections
@@ -41,6 +42,7 @@ class CollectionsController < ApplicationController
         format.html { redirect_to @collection, notice: 'Collection was successfully created.' }
         format.json { render :show, status: :created, location: @collection }
       else
+        @collection.collection_images.build
         format.html { render :new }
         format.json { render json: @collection.errors, status: :unprocessable_entity }
       end
@@ -60,6 +62,7 @@ class CollectionsController < ApplicationController
         format.html { redirect_to @collection, notice: 'Collection was successfully updated.' }
         format.json { render :show, status: :ok, location: @collection }
       else
+        @collection.collection_images.build
         format.html { render :edit }
         format.json { render json: @collection.errors, status: :unprocessable_entity }
       end
@@ -85,7 +88,19 @@ class CollectionsController < ApplicationController
     end
   end
 
-  def show_pretty
+  def show_collection
+    @product_image_urls = []
+
+    @collection.products.each do |p|
+      p_image_aux = []
+      p.product_images.each do |i|
+        p_image_aux.push(i.product_image.url(:large))
+      end
+      @product_image_urls.push(p_image_aux)
+    end
+  end
+
+  def show_collections
     @collections = Collection.all
   end
 

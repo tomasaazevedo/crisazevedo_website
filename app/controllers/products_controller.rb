@@ -23,14 +23,14 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product_images = @product.product_images.all
+    @product.product_images.build
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(product_params)
-    byebug
-
+    
     respond_to do |format|
       if @product.save
         if not product_images_params[:product_images_attributes].nil?
@@ -41,6 +41,7 @@ class ProductsController < ApplicationController
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
+        @product.product_images.build
         format.html { render :new }
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
@@ -60,6 +61,7 @@ class ProductsController < ApplicationController
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
         format.json { render :show, status: :ok, location: @product }
       else
+        @product.product_images.build
         format.html { render :edit }
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end

@@ -14,7 +14,7 @@
   <p>
     <strong>Imagens:</strong>
     <% @collection_images.each do |ci| %>
-      <%= image_tag ci.collection_image.url(:large) %>
+      <%= image_tag ci.collection_image.url(:med) %>
     <% end %>
   </p>
 <% end %>

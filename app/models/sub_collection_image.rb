@@ -2,7 +2,7 @@ class SubCollectionImage < ActiveRecord::Base
 
   belongs_to :sub_collection
 
-  has_attached_file :sub_collection_image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  has_attached_file :sub_collection_image, styles: { small: "100x100", med: "500x500", large: "1000x1000" }
 
   validates_attachment :sub_collection_image, presence: true
 

@@ -2,7 +2,7 @@ class CollectionImage < ActiveRecord::Base
 
   belongs_to :collection
 
-  has_attached_file :collection_image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  has_attached_file :collection_image, styles: { small: "100x100", med: "500x500", large: "1000x1000" }
 
   validates_attachment :collection_image, presence: true
 

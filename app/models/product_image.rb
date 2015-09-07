@@ -2,7 +2,7 @@ class ProductImage < ActiveRecord::Base
 
   belongs_to :product
 
-  has_attached_file :product_image, styles: { small: "64x64", med: "100x100", large: "200x200" }
+  has_attached_file :product_image, styles: { small: "100x100", med: "500x500", large: "1000x1000" }
 
   validates_attachment :product_image, presence: true
 

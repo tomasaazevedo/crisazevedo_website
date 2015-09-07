@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"max-height"
+			],
+			[
+				"show",
+				"show_pretty"
+			],
+			[
+				"require",
+				"require_admin"
+			],
+			[
+				"cent",
+				"centerPadding"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"accept",
+				"accept-charset	Attr"
+			],
+			[
+				"produ",
+				"product_image"
+			],
+			[
+				"prod",
+				"product_image"
+			],
+			[
+				"prodcu",
+				"product_image"
+			],
+			[
+				"collection",
+				"collection_image"
+			],
+			[
+				"col",
+				"collection_image"
+			],
+			[
+				"image",
+				"image_upload"
+			],
+			[
+				"remov",
+				"remove_image"
+			],
+			[
+				"count",
+				"count1"
+			],
+			[
+				"last",
+				"last_image_upload"
+			],
+			[
+				"destroy",
+				"destroy_image"
+			],
+			[
+				"product",
+				"product_images"
+			],
+			[
+				"pro",
+				"product_image"
+			],
+			[
+				"fir",
+				"first_image_upload"
+			],
+			[
 				"determinaFecho",
 				"determinaFechoReflexivoTransitivo"
 			],
@@ -59,6 +139,62 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 275,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/home.js",
+			"settings":
+			{
+				"buffer_size": 870,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/highlights_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2010,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/home.scss",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/collections/show_pretty.html.erb",
+			"settings":
+			{
+				"buffer_size": 1070,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/collections.js",
+			"settings":
+			{
+				"buffer_size": 853,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/collections.scss",
+			"settings":
+			{
+				"buffer_size": 1663,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -92,10 +228,106 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/tazevedo/Projects/cris_azevedo"
+		"/C/Users/tazevedo/Projects/cris_azevedo",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/stylesheets",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collections",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/highlights",
+		"/C/Users/tazevedo/Projects/cris_azevedo/config",
+		"/C/Users/tazevedo/Projects/cris_azevedo/vendor",
+		"/C/Users/tazevedo/Projects/cris_azevedo/vendor/assets"
 	],
 	"file_history":
 	[
+		"/C/Users/tazevedo/Documents/BodyCom/New Text Document.txt",
+		"/C/Users/tazevedo/Projects/cris_azevedo/config/routes.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/products_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collections/edit.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/stylesheets/responsive.css",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/collections_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collections/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collections/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/stylesheets/application.css",
+		"/C/Users/tazevedo/Projects/cris_azevedo/Gemfile",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/highlight.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/highlights/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/highlights/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150901174420_create_highlights.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/layouts/application.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/javascripts/application.js",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/signup.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/home_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/stylesheets/home.css",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/highlights/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/product_image.rb",
+		"/C/Users/tazevedo/AppData/Local/Temp/Temp1_slick-1.5.7.zip/slick-1.5.7/slick/config.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/users_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/sessions_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/new.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/index.json.jbuilder",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/show.json.jbuilder",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/users/edit.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/user.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/products/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/javascripts/products.coffee",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/javascripts/products.js",
+		"/C/Users/tazevedo/Projects/cris_azevedo/vendor/assets/stylesheets/dropzone.css",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/javascripts/dropzone.js",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/stylesheets/dropzone.css",
+		"/C/Users/tazevedo/AppData/Roaming/gnupg/gpg.conf",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/collection.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/product.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/sub_collection.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/sub_collections_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collections/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collections/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collections/edit.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collection_images/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828002215_create_sub_collections.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collections/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/products/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/products/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collections/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/products/edit.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collection_images/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collection_images/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collection_images/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/show.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/product_images_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/collection_images_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/sub_collection_images_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/collection_images/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sub_collection_images/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/new.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/index.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/_form.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/assets/javascripts/image_upload.js",
+		"/C/Users/tazevedo/Projects/cris_azevedo/config/environments/production.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/collection_image.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/models/sub_collection_image.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150829014904_create_collection_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150829015225_create_sub_collection_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/edit.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828171751_create_product_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/show.json.jbuilder",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/product_images/index.json.jbuilder",
+		"/C/Users/tazevedo/Desktop/product_images_controller.rb",
+		"/C/Users/tazevedo/Desktop/product_image.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/controllers/application_controller.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/seeds.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/sessions/new.html.erb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828002611_create_products.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828002358_create_sub_collection_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828002302_create_product_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150828002333_create_collection_images.rb",
+		"/C/Users/tazevedo/Projects/cris_azevedo/app/views/products/show.json.jbuilder",
+		"/C/Users/tazevedo/Projects/cris_azevedo/db/migrate/20150825114816_create_users.rb",
 		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/EdTest.c",
 		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/Edwards.c",
 		"/C/Users/tazevedo/Documents/BodyCom/BZ.2015.04.30/BZ.c",
@@ -137,24 +369,18 @@
 		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/TX_Manchester.h",
 		"/C/Users/tazevedo/Documents/BodyCom/BodyCom_Board_Original.X/headers/RX_Manchester.h",
 		"/C/Users/tazevedo/Documents/Poli/2015-1/Lógica Computacional/EPLogica/ep1.rkt",
-		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BodyCom_Application/BC_Application.c",
-		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BC_Board_Mod.X/main.c",
-		"/C/Users/tazevedo/Documents/Poli/2015-1/Lab. Soft. II/GITTHotel/README.md",
-		"/C/Program Files (x86)/Microchip/BodyCom Technology/Firmware/V 1.2 Release/BC_Mobile_Dev.X/config.h",
-		"/C/Program Files (x86)/Microchip/BodyCom Technology/Firmware/V 1.2 Release/BC_Mobile_Dev.X/main.c",
-		"/C/Users/tazevedo/Documents/BodyCom/report.txt",
-		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Original/BC_Board_Original.X/dist/default/production/BC_Board_Original.X.production.obj",
-		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Original/BC_Board_Original.X/dist/default/production/BC_Board_Original.X.production.map"
+		"/C/Users/tazevedo/Documents/BodyCom/BC_Board_Modified/BodyCom_Application/BC_Application.c"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"<open folders>",
 			"<open folders>,*.c, *.h",
 			"<open folders>",
 			"C:\\Users\\tazevedo\\Documents\\BodyCom\\BC_Board_Original",
@@ -166,6 +392,45 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"product_image",
+			"user",
+			"else",
+			"user",
+			"product",
+			"products",
+			"product",
+			"collection_image",
+			"collection_images",
+			"product",
+			"first_name",
+			"collection_image",
+			".dz-default.dz-message",
+			".dropzone.dz-default.dz-message",
+			".dropzone .dz-default.dz-message",
+			"ci",
+			"collection",
+			"ci",
+			"collection",
+			"_sub_collection_image",
+			"collection",
+			"collection_images",
+			"product",
+			"product_image",
+			"pi",
+			"product",
+			"pi",
+			"product",
+			"sub",
+			"collection_image",
+			"product_image",
+			"sub_collection",
+			"clear_upload",
+			"byebug",
+			"image",
+			"'",
+			"fields_for",
+			"collection_image",
+			"product_image",
 			"EdD",
 			"mark",
 			"EdDsp",
@@ -236,18 +501,225 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/home/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/javascripts/home.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/highlights_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1996,
+								1996
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/collections/show_pretty.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								379,
+								379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/collections.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/stylesheets/collections.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -280,7 +752,7 @@
 	"project": "cris_azevedo_project.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -318,7 +790,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 280.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -1,7 +1,7 @@
 class SubCollection < ActiveRecord::Base
 
-  has_many :sub_collection_images
-  has_many :products
+  has_many :sub_collection_images, :dependent => :destroy
+  has_many :products, :dependent => :destroy
 
   belongs_to :collection
 
