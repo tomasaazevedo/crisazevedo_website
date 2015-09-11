@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20150901174420) do
     t.string   "material"
     t.string   "product_code"
     t.boolean  "is_new_release"
-    t.string   "type"
+    t.string   "product_type"
     t.integer  "collection_id"
     t.integer  "sub_collection_id"
     t.datetime "created_at",        null: false

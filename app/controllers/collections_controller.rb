@@ -100,7 +100,7 @@ class CollectionsController < ApplicationController
     end
   end
 
-  def show_collections
+  def show_all_collections
     @collections = Collection.all
   end
 

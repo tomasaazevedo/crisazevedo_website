@@ -30,6 +30,8 @@ gem 'twitter-bootstrap-rails'
 gem 'paperclip'
 gem 'bootstrap-sass'
 
+gem 'rails-i18n'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

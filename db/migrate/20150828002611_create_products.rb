@@ -8,7 +8,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :material
       t.string :product_code
       t.boolean :is_new_release
-      t.string :type
+      t.string :product_type
       t.references :collection
       t.references :sub_collection
 

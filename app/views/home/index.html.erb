@@ -9,3 +9,15 @@
     <% end %>
   </div>
 </div>
+<div class="releases_box">
+  <h2>Lançamentos</h2>
+  <div class="row">
+    <% @releases.each do |r| %>
+      <% if r.product_images.first %>
+        <div class="col-sm-6">
+          <%= image_tag r.product_images.first.product_image.url(:large) %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

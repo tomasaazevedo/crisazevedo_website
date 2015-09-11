@@ -7,7 +7,7 @@
     <%= form_for(@user) do |f| %>
       <%= f.text_field :first_name, :placeholder => "Nome" %>
       <%= f.text_field :last_name, :placeholder => "Sobrenome" %>
-      <%= f.text_field :username, :placeholder => "Usuário" %>
+      <%= f.text_field :username, :placeholder => "Nome de Usuário" %>
       <%= f.email_field :email, :placeholder => "Email" %>
       <%= f.password_field :password, :placeholder => "Senha" %>
       <%= f.submit "Criar uma conta", class: "btn-submit" %>

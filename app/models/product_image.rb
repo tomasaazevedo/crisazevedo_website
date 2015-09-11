@@ -14,4 +14,10 @@ class ProductImage < ActiveRecord::Base
 
   validates :product, presence: true
 
+  after_validation :clean_paperclip_errors
+
+  def clean_paperclip_errors
+    errors.delete(:product_image)
+  end
+
 end

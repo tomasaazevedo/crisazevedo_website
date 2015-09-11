@@ -8,24 +8,6 @@
 </head>
 <body>
 
-<!--   <div class="header">
-    <div class="container">
-      <div class="nav pull-right">
-        <% if current_user %> 
-          <ul> 
-            <li><%= current_user.email %></li> 
-            <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
-          </ul> 
-        <% else %> 
-          <ul> 
-            <li><%= link_to "Login", 'login' %></a></li> 
-            <li><%= link_to "Signup", 'signup' %></a></li>
-          </ul> 
-        <% end %>  
-      </div>
-    </div>
-  </div> -->
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,20 +23,19 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
+          <li class="active"><%= link_to 'Coleções', show_collections_path %></li>
+          <li><%= link_to 'Lançamentos' %></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <a href=<%= show_all_products_path %> class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos</a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <% Product::TYPELIST.each do |type| %>
+                <% if Product.where(product_type: type).first %>
+                  <li><%= link_to type.capitalize.pluralize, show_products_by_type_path(type.pluralize) %></a></li>
+                <% end %>
+              <% end %>
             </ul>
           </li>
+          <li><%= link_to 'Notícias' %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if current_user %> 
@@ -75,9 +56,9 @@
                   <li><%= link_to "Destaques", highlights_path %></li>
                   <li><%= link_to "Usuários", users_path %></li> 
                   <li role="separator" class="divider"></li>
-                  <li><%= link_to "Imagens de produto", 'product_images' %></li>
-                  <li><%= link_to "Imagens de sub-coleções", 'sub_collection_images' %></li>
-                  <li><%= link_to "Imagens de coleções", 'collection_images' %></li>
+                  <li><%= link_to "Imagens de produto", product_images_path %></li>
+                  <li><%= link_to "Imagens de sub-coleções", sub_collection_images_path %></li>
+                  <li><%= link_to "Imagens de coleções", collection_images_path %></li>
                 </ul>
               </li>
             <% end %>

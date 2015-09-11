@@ -26,8 +26,11 @@ Rails.application.routes.draw do
   get '/collections/destroy_image/:id' => 'collections#destroy_image'
   get '/sub_collections/destroy_image/:id' => 'sub_collections#destroy_image'
 
-  get '/show_collections/:id' => 'collections#show_collection', as: 'show_collection'
-  get '/show_collections' => 'collections#show_collections', as: 'show_collections'
+  get '/show_collections' => 'collections#show_all_collections', as: 'show_collections'
+  get '/show_collections/:id' => 'collections#show_collection'
+
+  get '/show_products' => 'products#show_all_products', as: 'show_all_products'
+  get '/show_products/:type' => 'products#show_products_by_type', as: 'show_products_by_type'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

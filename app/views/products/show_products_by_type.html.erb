@@ -1,0 +1,26 @@
+<% if @products %>
+  <h1><%= @products.first.product_type.pluralize.capitalize %></h1>
+
+  <div class="show_products-product-container">
+    <div class="show_products-product_images-container">
+<!--       <div class="prev-arrow">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </div> -->
+      <div class="show_products-product_images-slick">
+      </div>
+<!--       <div class="next-arrow">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </div> -->
+    </div>
+    <div class="show_products-product_info-container">
+    </div>
+  </div>
+
+  <div class="show_products-products_images-container">
+    <% @products.zip(@product_image_urls).each do |p, i| %>
+      <div class="show_products-products_image-container">
+        <%= image_tag p.product_images.first.product_image.url(:med), data: {productimages: i.to_json, productinfo: p.to_json} %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

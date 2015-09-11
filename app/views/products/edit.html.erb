@@ -7,7 +7,7 @@
     <strong>Remover imagens:</strong>
     <% @product_images.each do |pi| %>
       <div class='image_container'>
-        <%= image_tag pi.product_image.url(:large) %>
+        <%= image_tag pi.product_image.url(:med) %>
         <%= link_to 'Delete', 
           { :controller => 'products', :action => 'destroy_image', :id => pi.id },
           { :data => {:confirm => 'Are you sure?'}, :method => :get} %> 

@@ -27,6 +27,7 @@ class ProductImagesController < ApplicationController
   # POST /product_images.json
   def create
     @product_image = ProductImage.new(product_image_params)
+    @product_image.product = Product.find(params[:product_image][:product])
 
     respond_to do |format|
       if @product_image.save
@@ -42,6 +43,8 @@ class ProductImagesController < ApplicationController
   # PATCH/PUT /product_images/1
   # PATCH/PUT /product_images/1.json
   def update
+    @product_image.product = Product.find(params[:product_image][:product])
+
     respond_to do |format|
       if @product_image.update(product_image_params)
         format.html { redirect_to @product_image, notice: 'Product image was successfully updated.' }
@@ -71,6 +74,6 @@ class ProductImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_image_params
-      params.require(:product_image).permit(:product_image, :product)
+      params.require(:product_image).permit(:product_image, :product_id)
     end
 end

@@ -19,12 +19,13 @@
  -->
 <div class="show_collections-product-container">
   <div class="show_collections-product_images-container">
+    <div class="prev-arrow">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </div>
     <div class="show_collections-product_images-slick">
-<!--       <% @collection.products.first.product_images.each do |pi| %>
-        <div>
-          <%= image_tag pi.product_image.url(:large) %>
-        </div>
-      <% end %> -->
+    </div>
+    <div class="next-arrow">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     </div>
   </div>
   <div class="show_collections-product_info-container">
@@ -34,7 +35,7 @@
 <div class="show_collections-products_images-container">
   <% @collection.products.zip(@product_image_urls).each do |p, i| %>
     <div class="show_collections-products_image-container">
-      <%= image_tag p.product_images.first.product_image.url(:med), data: {productImages: i.to_json, productInfo: p} %>
+      <%= image_tag p.product_images.first.product_image.url(:med), data: {productimages: i.to_json, productinfo: p.to_json} %>
     </div>
   <% end %>
 </div>
